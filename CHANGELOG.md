@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/felipemiramontesr/prepper/compare/v1.2.0...v1.3.0) (2026-03-15)
+
+### Features
+
+- **ui:** implement strict mapard tactical header and footer components ([8fea6cc](https://github.com/felipemiramontesr/prepper/commit/8fea6cccd9519f1b0c7784f2544c1e8c359b8ec3))
+
 # [1.2.0](https://github.com/felipemiramontesr/prepper/compare/v1.1.0...v1.2.0) (2026-03-15)
 
 ### Features
