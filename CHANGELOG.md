@@ -1,3 +1,9 @@
+# [1.7.0](https://github.com/felipemiramontesr/prepper/compare/v1.6.0...v1.7.0) (2026-03-15)
+
+### Features
+
+- **ui:** implement brutal mobile-first and above-the-fold responsiveness ([49a5e4f](https://github.com/felipemiramontesr/prepper/commit/49a5e4fc936a19cfdbfbf070c2b8c06381ae2e3a))
+
 # [1.6.0](https://github.com/felipemiramontesr/prepper/compare/v1.5.0...v1.6.0) (2026-03-15)
 
 ### Bug Fixes
