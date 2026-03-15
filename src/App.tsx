@@ -37,7 +37,7 @@ function App() {
       </header>
 
       {/* Main Content (Above the Fold) */}
-      <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 pb-20 pt-20 text-center md:p-8 md:pb-24 md:pt-24">
+      <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 text-center md:p-8">
         {/* Logotipo Hero Gigante */}
         <div className="mb-10 flex w-full justify-center">
           <Logo variant="hero" />
@@ -107,7 +107,7 @@ function App() {
       </main>
 
       {/* Footer (Aviso Legal / Versión) */}
-      <footer className="absolute bottom-0 z-50 flex h-14 w-full items-center justify-center border-t border-white/10 bg-black/80 p-4 backdrop-blur-md">
+      <footer className="relative z-50 flex h-14 w-full flex-none items-center justify-center border-t border-white/10 bg-black/80 p-4 backdrop-blur-md">
         <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 sm:text-xs">
           MAPA-RD © {new Date().getFullYear()} • PREPPER LINK NODE ACTIVE • SECURE CONNECTION
         </p>
