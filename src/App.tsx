@@ -1,5 +1,6 @@
 import { Activity, Navigation2, Zap } from 'lucide-react';
 import { Logo } from './components/ui/Logo';
+import { HudCard } from './components/ui/HudCard';
 
 function App() {
   return (
@@ -63,46 +64,33 @@ function App() {
 
         {/* Cards / Dashboards preview */}
         <div className="relative z-10 grid w-full grid-cols-1 gap-6 text-left md:grid-cols-3">
-          <div className="hud-card group transition-colors duration-300 hover:border-[var(--accent)]">
-            <div className="mb-4 flex items-start justify-between">
-              <h3 className="text-sm font-semibold uppercase tracking-[.10em] text-[#fff]">
-                Inventario Crítico
-              </h3>
-              <Activity className="h-4 w-4 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--accent)]" />
-            </div>
-            <div className="mb-1 text-3xl font-light text-[var(--logo-neon)]">87%</div>
-            <p className="flex items-center gap-1 text-xs text-[var(--text-tertiary)]">
-              <span className="text-emerald-400">↑ 2%</span> desde última auditoría
-            </p>
-          </div>
+          <HudCard
+            title="Inventario Crítico"
+            value="87%"
+            valueClassName="text-[var(--logo-neon)]"
+            Icon={Activity}
+            trend={{ label: '↑ 2%', isPositive: true }}
+            subtitle="desde última auditoría"
+          />
 
-          <div className="hud-card group transition-colors duration-300 hover:border-[var(--accent)]">
-            <div className="mb-4 flex items-start justify-between">
-              <h3 className="text-sm font-semibold uppercase tracking-[.10em] text-[#fff]">
-                Comunicaciones
-              </h3>
-              <Activity className="h-4 w-4 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--accent)]" />
-            </div>
-            <div className="mb-1 text-3xl font-light text-[var(--text-primary)]">ENCRIPTADO</div>
-            <p className="text-xs text-[var(--text-tertiary)]">Canal VHF y Satelital activo</p>
-          </div>
+          <HudCard
+            title="Comunicaciones"
+            value="ENCRIPTADO"
+            Icon={Activity}
+            subtitle="Canal VHF y Satelital activo"
+          />
 
-          <div className="hud-card group transition-colors duration-300 hover:border-[var(--accent)]">
-            <div className="mb-4 flex items-start justify-between">
-              <h3 className="text-sm font-semibold uppercase tracking-[.10em] text-[#fff]">
-                Rutas de Evac
-              </h3>
-              <Activity className="h-4 w-4 text-[var(--text-tertiary)] transition-colors group-hover:text-[var(--accent)]" />
-            </div>
-            <div className="mb-1 text-3xl font-light text-[var(--text-primary)]">
-              3 <span className="text-sm text-[var(--text-tertiary)]">VÍAS</span>
-            </div>
-            <p className="flex items-center gap-1 text-xs text-[var(--text-tertiary)]">
-              <span className="cursor-pointer text-yellow-500 hover:text-yellow-400">
-                Revisar mapa topográfico
-              </span>
-            </p>
-          </div>
+          <HudCard
+            title="Rutas de Evac"
+            value={
+              <>
+                3 <span className="text-sm text-[var(--text-tertiary)]">VÍAS</span>
+              </>
+            }
+            Icon={Activity}
+            trend={{ label: 'Revisar mapa topográfico', isWarning: true }}
+            className="cursor-pointer"
+          />
         </div>
       </main>
 
