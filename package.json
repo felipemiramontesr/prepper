@@ -12,7 +12,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\" --cache",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "audit:sec": "npm audit",
+    "audit:sec": "npm audit --audit-level=high",
     "docs": "typedoc",
     "commit": "cz"
   },
