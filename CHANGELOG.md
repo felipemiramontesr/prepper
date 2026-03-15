@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/felipemiramontesr/prepper/compare/v1.1.0...v1.2.0) (2026-03-15)
+
+### Features
+
+- **ui:** implement global crt scanline overlay for tactical mapard aesthetic ([76508db](https://github.com/felipemiramontesr/prepper/commit/76508db9e245f5d8f5578dce047be5c9da19ea6d))
+
 # [1.1.0](https://github.com/felipemiramontesr/prepper/compare/v1.0.0...v1.1.0) (2026-03-15)
 
 ### Features
