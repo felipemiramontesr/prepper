@@ -51,6 +51,22 @@
     margin: 0;
     min-height: 100vh;
   }
+
+  /* Scanline Effect (CRT Texture) */
+  body::before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* Crea bandas horizontales transparentes y casi negras alternadas */
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+    z-index: 50;
+    background-size: 100% 4px; /* Las franjas se repiten cada 4px */
+    pointer-events: none; /* Crucial: permite dar clicks "a través" de esta capa */
+  }
 }
 
 @layer components {
@@ -80,21 +96,5 @@
     background-color: rgba(255, 255, 255, 0.03);
     padding: 1.25rem;
     backdrop-filter: blur(8px);
-  }
-
-  /* Logotipo MAPARD: Efecto de líneas horizontales (Scanlines/Tech) */
-  .logo-text-lines {
-    background: repeating-linear-gradient(
-      to bottom,
-      #ffffff 0px,
-      #ffffff 3px,
-      rgba(10, 14, 39, 0.5) 3px,
-      rgba(10, 14, 39, 0.5) 4px
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #ffffff; /* Fallback */
-    /* Ligero drop-shadow para que resalte más contra fondos oscuros */
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
 }
