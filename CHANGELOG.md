@@ -1,3 +1,9 @@
+# [1.5.0](https://github.com/felipemiramontesr/prepper/compare/v1.4.0...v1.5.0) (2026-03-15)
+
+### Features
+
+- **ui:** update page title to MAPARD PREPPER ([3b36c50](https://github.com/felipemiramontesr/prepper/commit/3b36c50d372b5259dacc117cea40fdd26ca3a476))
+
 # [1.4.0](https://github.com/felipemiramontesr/prepper/compare/v1.3.0...v1.4.0) (2026-03-15)
 
 ### Features
