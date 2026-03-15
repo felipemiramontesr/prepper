@@ -29,7 +29,7 @@ jobs:
         run: npm ci
       
       - name: Security audit
-        run: npm run audit:sec
+        run: npm audit --audit-level=high
       
       - name: Run unit tests
         run: npm run test -- --run
