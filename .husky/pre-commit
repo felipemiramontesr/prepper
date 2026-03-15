@@ -1,1 +1,9 @@
+# Security Audit (Block on High/Critical)
+npm audit --audit-level=high
+
+# Run Tests
+npm run test -- --run
+
+# Lint and Format
 npx lint-staged
+

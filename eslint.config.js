@@ -5,6 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 
+import security from 'eslint-plugin-security';
+
 export default tseslint.config(
   { ignores: ['dist', 'build', 'node_modules'] },
   {
@@ -12,6 +14,7 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       jsxA11y.flatConfigs.recommended,
+      security.configs.recommended,
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
