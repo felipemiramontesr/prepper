@@ -4,45 +4,44 @@ import { Logo } from './components/ui/Logo';
 function App() {
   return (
     <div className="theme-prepper flex min-h-screen w-full flex-col selection:bg-emerald-900/50">
-      {/* Header Logotipo Falso */}
-      <header className="flex w-full items-center justify-between border-b border-white/10 px-6 py-4">
-        <div className="flex items-center gap-4">
-          {/* Nuevo Logotipo MAPARD */}
-          <Logo showSubtitle={false} />
+      {/* Header (Navegación / Logotipo) */}
+      <header className="bg-[var(--bg-dark-start)]/80 relative z-50 h-16 w-full flex-none border-b border-white/10 pt-[env(safe-area-inset-top)] shadow-2xl backdrop-blur-xl">
+        <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4">
+          <div className="flex items-center gap-4">
+            {/* Nuevo Logotipo MAPARD */}
+            <Logo showSubtitle={false} />
 
-          <span className="ml-2 flex items-center rounded border border-emerald-500/30 bg-emerald-900/20 px-2 py-0.5 text-xs font-bold uppercase tracking-widest text-[var(--accent)] shadow-[0_0_10px_rgba(16,185,129,0.2)]">
-            <span className="mr-1 h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--logo-neon)]"></span>
-            Prepper Link
-          </span>
-        </div>
-        <div className="hidden items-center gap-6 md:flex">
-          <div className="flex flex-col text-right">
-            <span className="text-xs uppercase tracking-widest text-[var(--text-tertiary)]">
-              System Status
-            </span>
-            <span className="flex items-center gap-1 text-sm font-semibold tracking-wider text-[var(--logo-neon)]">
-              <Activity className="h-3 w-3" /> ONLINE
+            <span className="ml-2 flex items-center rounded border border-emerald-500/30 bg-emerald-900/20 px-2 py-0.5 text-xs font-bold uppercase tracking-widest text-[var(--accent)] shadow-[0_0_10px_rgba(16,185,129,0.2)]">
+              <span className="mr-1 h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--logo-neon)]"></span>
+              Prepper Link
             </span>
           </div>
-          <div className="h-8 w-px bg-white/10"></div>
-          <div className="flex flex-col text-right">
-            <span className="text-xs uppercase tracking-widest text-[var(--text-tertiary)]">
-              Threat Level
-            </span>
-            <span className="text-sm font-semibold tracking-wider text-yellow-500">ELEVATED</span>
+          <div className="hidden items-center gap-6 md:flex">
+            <div className="flex flex-col text-right">
+              <span className="text-xs uppercase tracking-widest text-[var(--text-tertiary)]">
+                System Status
+              </span>
+              <span className="flex items-center gap-1 text-sm font-semibold tracking-wider text-[var(--logo-neon)]">
+                <Activity className="h-3 w-3" /> ONLINE
+              </span>
+            </div>
+            <div className="h-8 w-px bg-white/10"></div>
+            <div className="flex flex-col text-right">
+              <span className="text-xs uppercase tracking-widest text-[var(--text-tertiary)]">
+                Threat Level
+              </span>
+              <span className="text-sm font-semibold tracking-wider text-yellow-500">ELEVATED</span>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Main Content (Above the Fold) */}
-      <main className="mx-auto mt-8 flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 text-center md:mt-16 md:p-8">
-        {/* Título Principal H1 */}
-        <h2 className="mb-4 max-w-4xl text-4xl font-light tracking-tight text-[#fff] drop-shadow-lg md:text-6xl">
-          Terminal de Coordinación <br />
-          <span className="font-semibold" style={{ color: 'var(--logo-neon)' }}>
-            Táctica y Supervivencia
-          </span>
-        </h2>
+      <main className="mx-auto mt-8 flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 pb-20 text-center md:mt-12 md:p-8">
+        {/* Logotipo Hero Gigante */}
+        <div className="mb-10 flex w-full justify-center">
+          <Logo variant="hero" />
+        </div>
 
         {/* Subtítulo / Párrafo */}
         <p className="mb-10 max-w-2xl text-lg font-light leading-relaxed text-[var(--text-secondary)] md:text-xl">
@@ -107,8 +106,14 @@ function App() {
         </div>
       </main>
 
+      {/* Footer (Aviso Legal / Versión) */}
+      <footer className="absolute bottom-0 z-50 flex h-14 w-full items-center justify-center border-t border-white/10 bg-black/80 p-4 backdrop-blur-md">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 sm:text-xs">
+          MAPA-RD © {new Date().getFullYear()} • PREPPER LINK NODE ACTIVE • SECURE CONNECTION
+        </p>
+      </footer>
+
       {/* Decorative HUD Elements */}
-      <div className="border-[var(--border-ui)]/30 fixed bottom-0 left-0 z-0 h-1 w-full border-t backdrop-blur-sm"></div>
       <div className="fixed right-4 top-20 z-0 hidden h-32 w-px bg-gradient-to-b from-[var(--logo-neon)] to-transparent opacity-30 lg:block"></div>
       <div className="fixed left-4 top-20 z-0 hidden h-16 w-px bg-gradient-to-b from-[var(--text-tertiary)] to-transparent opacity-20 lg:block"></div>
     </div>
