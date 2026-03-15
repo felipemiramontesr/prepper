@@ -1,0 +1,9 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["./src/main.tsx", "./src/App.tsx"],
+  "out": "docs",
+  "name": "MAPARD Prepper App - Documentación Técnica",
+  "includeVersion": true,
+  "plugin": [],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx", "tests/**/*"]
+}
