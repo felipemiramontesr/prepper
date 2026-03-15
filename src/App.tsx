@@ -37,7 +37,7 @@ function App() {
       </header>
 
       {/* Main Content (Above the Fold) */}
-      <main className="mx-auto mt-8 flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 pb-20 text-center md:mt-12 md:p-8">
+      <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col items-center justify-center p-4 pb-20 pt-20 text-center md:p-8 md:pb-24 md:pt-24">
         {/* Logotipo Hero Gigante */}
         <div className="mb-10 flex w-full justify-center">
           <Logo variant="hero" />
