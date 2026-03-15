@@ -4,10 +4,12 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write # Needed for semantic-release to push tags and releases
+  issues: write   # Needed for semantic-release to create failure issues
 
 jobs:
   build-and-test:
