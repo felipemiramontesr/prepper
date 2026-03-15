@@ -1,3 +1,9 @@
+# [1.4.0](https://github.com/felipemiramontesr/prepper/compare/v1.3.0...v1.4.0) (2026-03-15)
+
+### Features
+
+- **assets:** update favicon to mapard shield logo ([ab887f9](https://github.com/felipemiramontesr/prepper/commit/ab887f9d44f1cf737b9082c8037618a94cfe9db7))
+
 # [1.3.0](https://github.com/felipemiramontesr/prepper/compare/v1.2.0...v1.3.0) (2026-03-15)
 
 ### Features
