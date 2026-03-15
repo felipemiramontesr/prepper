@@ -20,7 +20,7 @@ export function Logo({ className = '', showSubtitle = true }: LogoProps) {
       </div>
       {showSubtitle && (
         <span className="mt-1 flex items-center gap-1 text-[0.55rem] font-semibold uppercase tracking-[0.3em] text-[var(--text-secondary)] md:text-[0.65rem] md:tracking-[0.4em]">
-          INTELIGENCIA TÁCTICA
+          TÁCTICA • SUPERVIVENCIA • PREPARACIONISMO
         </span>
       )}
     </div>
