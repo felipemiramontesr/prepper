@@ -32,8 +32,4 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'warn',
     },
   }
-);ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-  },
-])
+);

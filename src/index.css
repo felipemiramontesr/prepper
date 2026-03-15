@@ -6,79 +6,79 @@
    TEMA BASE (MAPA-RD Ciberseguridad)
    ========================================================================== */
 :root {
-    /* --- Paleta de Fondos (Ambiente) --- */
-    --bg-dark-start: #0a0e27; /* Dark Navy profundo (Inicio del gradiente) */
-    --bg-dark-end: #1a1f3a;   /* Navy más claro (Fin del gradiente) */
-    
-    /* --- Paleta de Texto --- */
-    --text-primary: #e8e8e8;  /* Blanco hueso para alta legibilidad en oscuro */
-    --text-secondary: #c5cae0;/* Gris azulado para descripciones */
-    --text-tertiary: #6b7490; /* Gris apagado para notas al pie o microcopy */
-    
-    /* --- Colores de Marca y Acento (La "Personalidad") --- */
-    --accent: #8a9fca;        /* Azul lavanda desaturado (Links, hover, iconos clave) */
-    --logo-neon: #00f3ff;     /* Cyan brillante (Exclusivo para el escudo principal) */
-    
-    /* --- Elementos de Interfaz (UI) --- */
-    --border-ui: #4a5578;     /* Azul grisáceo para separadores y contornos */
-    --btn-primary: #5a6fa0;   /* Fondo principal de botones de acción */
-    --btn-hover: #6b7fa8;     /* Efecto hover suave para botones */
-    
-    /* --- Espaciado Tipográfico --- */
-    --font-spacing-wide: .10em;  /* Para H3 y pequeños encabezados */
-    --font-spacing-wider: .16em; /* Para Etiquetas (Tags) y elementos de máxima jerarquía visual pequeña */
+  /* --- Paleta de Fondos (Ambiente) --- */
+  --bg-dark-start: #0a0e27; /* Dark Navy profundo (Inicio del gradiente) */
+  --bg-dark-end: #1a1f3a; /* Navy más claro (Fin del gradiente) */
+
+  /* --- Paleta de Texto --- */
+  --text-primary: #e8e8e8; /* Blanco hueso para alta legibilidad en oscuro */
+  --text-secondary: #c5cae0; /* Gris azulado para descripciones */
+  --text-tertiary: #6b7490; /* Gris apagado para notas al pie o microcopy */
+
+  /* --- Colores de Marca y Acento (La "Personalidad") --- */
+  --accent: #8a9fca; /* Azul lavanda desaturado (Links, hover, iconos clave) */
+  --logo-neon: #00f3ff; /* Cyan brillante (Exclusivo para el escudo principal) */
+
+  /* --- Elementos de Interfaz (UI) --- */
+  --border-ui: #4a5578; /* Azul grisáceo para separadores y contornos */
+  --btn-primary: #5a6fa0; /* Fondo principal de botones de acción */
+  --btn-hover: #6b7fa8; /* Efecto hover suave para botones */
+
+  /* --- Espaciado Tipográfico --- */
+  --font-spacing-wide: 0.1em; /* Para H3 y pequeños encabezados */
+  --font-spacing-wider: 0.16em; /* Para Etiquetas (Tags) y elementos de máxima jerarquía visual pequeña */
 }
 
 /* ==========================================================================
    TEMA PREPPER (Sobreescritura de variables base)
    ========================================================================== */
 .theme-prepper {
-    /* --- Nuevos Acentos "Táctico/Supervivencia" --- */
-    --accent: #10b981;        /* Verde Esmeralda Táctico */
-    --logo-neon: #00ff66;     /* Verde Fósforo/Visión Nocturna para el escudo */
-    
-    /* --- Elementos UI adaptados al nuevo acento --- */
-    --border-ui: #2e4a3d;     /* Un borde en tono "Olive/Earthy Green" profundo y desaturado */
-    --btn-primary: #1f5c3a;   /* Botón primario en verde bosque táctico */
-    --btn-hover: #2f8253;     /* Hover que ilumina el botón sutilmente */
+  /* --- Nuevos Acentos "Táctico/Supervivencia" --- */
+  --accent: #10b981; /* Verde Esmeralda Táctico */
+  --logo-neon: #00ff66; /* Verde Fósforo/Visión Nocturna para el escudo */
+
+  /* --- Elementos UI adaptados al nuevo acento --- */
+  --border-ui: #2e4a3d; /* Un borde en tono "Olive/Earthy Green" profundo y desaturado */
+  --btn-primary: #1f5c3a; /* Botón primario en verde bosque táctico */
+  --btn-hover: #2f8253; /* Hover que ilumina el botón sutilmente */
 }
 
 @layer base {
   body {
-      background: linear-gradient(135deg, var(--bg-dark-start) 0%, var(--bg-dark-end) 100%);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: var(--text-primary);
-      margin: 0;
-      min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-dark-start) 0%, var(--bg-dark-end) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    margin: 0;
+    min-height: 100vh;
   }
 }
 
 @layer components {
   /* Botones (.btn) */
   .btn {
-      @apply tracking-wider uppercase font-semibold text-[0.98rem] flex items-center justify-center;
-      padding: 1rem 1.6rem;
-      background-color: transparent;
-      border: 1.5px solid var(--btn-primary);
-      color: var(--text-primary);
-      transition: all 0.25s ease;
+    @apply flex items-center justify-center text-[0.98rem] font-semibold uppercase tracking-wider;
+    padding: 1rem 1.6rem;
+    background-color: transparent;
+    border: 1.5px solid var(--btn-primary);
+    color: var(--text-primary);
+    transition: all 0.25s ease;
   }
-  
+
   .btn-primary {
-      background-color: var(--btn-primary);
+    background-color: var(--btn-primary);
   }
-  
+
   .btn:hover {
-      border-color: var(--accent);
-      /* El glow táctico */
-      box-shadow: 0 0 20px rgba(16, 185, 129, 0.18); 
+    border-color: var(--accent);
+    /* El glow táctico */
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.18);
   }
-  
+
   /* Tarjetas (.card) */
   .hud-card {
-      border: 1px solid rgba(46, 74, 61, 0.55); /* border-ui adaptado con opacidad */
-      background-color: rgba(255, 255, 255, 0.03);
-      padding: 1.25rem;
-      backdrop-filter: blur(8px);
+    border: 1px solid rgba(46, 74, 61, 0.55); /* border-ui adaptado con opacidad */
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 1.25rem;
+    backdrop-filter: blur(8px);
   }
 }
