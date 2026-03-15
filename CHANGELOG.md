@@ -1,3 +1,9 @@
+## [1.7.1](https://github.com/felipemiramontesr/prepper/compare/v1.7.0...v1.7.1) (2026-03-15)
+
+### Bug Fixes
+
+- **ui:** restore visibility of missing HUD cards on mobile ([3a925f3](https://github.com/felipemiramontesr/prepper/commit/3a925f30c772fd05d6f70f95c265a97a1cee059e))
+
 # [1.7.0](https://github.com/felipemiramontesr/prepper/compare/v1.6.0...v1.7.0) (2026-03-15)
 
 ### Features
