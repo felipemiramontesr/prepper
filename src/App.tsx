@@ -1,15 +1,15 @@
-import { ShieldAlert, Activity, Navigation2, Zap } from 'lucide-react';
+import { Activity, Navigation2, Zap } from 'lucide-react';
+import { Logo } from './components/ui/Logo';
 
 function App() {
   return (
     <div className="theme-prepper flex min-h-screen w-full flex-col selection:bg-emerald-900/50">
       {/* Header Logotipo Falso */}
       <header className="flex w-full items-center justify-between border-b border-white/10 px-6 py-4">
-        <div className="flex items-center gap-3">
-          <ShieldAlert className="h-8 w-8 flex-shrink-0" style={{ color: 'var(--logo-neon)' }} />
-          <h1 className="m-0 text-2xl font-black uppercase leading-none tracking-widest text-[#fff]">
-            MAPARD
-          </h1>
+        <div className="flex items-center gap-4">
+          {/* Nuevo Logotipo MAPARD */}
+          <Logo showSubtitle={false} />
+
           <span className="ml-2 flex items-center rounded border border-emerald-500/30 bg-emerald-900/20 px-2 py-0.5 text-xs font-bold uppercase tracking-widest text-[var(--accent)] shadow-[0_0_10px_rgba(16,185,129,0.2)]">
             <span className="mr-1 h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--logo-neon)]"></span>
             Prepper Link

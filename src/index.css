@@ -81,4 +81,20 @@
     padding: 1.25rem;
     backdrop-filter: blur(8px);
   }
+
+  /* Logotipo MAPARD: Efecto de líneas horizontales (Scanlines/Tech) */
+  .logo-text-lines {
+    background: repeating-linear-gradient(
+      to bottom,
+      #ffffff 0px,
+      #ffffff 3px,
+      rgba(10, 14, 39, 0.5) 3px,
+      rgba(10, 14, 39, 0.5) 4px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff; /* Fallback */
+    /* Ligero drop-shadow para que resalte más contra fondos oscuros */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
 }
