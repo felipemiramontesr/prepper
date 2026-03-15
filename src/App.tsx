@@ -84,7 +84,6 @@ function App() {
             value="ENCRIPTADO"
             Icon={Activity}
             subtitle="Canal VHF y Satelital activo"
-            className="hidden sm:flex"
           />
 
           <HudCard
@@ -96,7 +95,6 @@ function App() {
             }
             Icon={Activity}
             trend={{ label: 'Revisar mapa topográfico', isWarning: true }}
-            className="hidden lg:flex"
           />
         </div>
       </main>
