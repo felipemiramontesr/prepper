@@ -1,3 +1,14 @@
+# [1.6.0](https://github.com/felipemiramontesr/prepper/compare/v1.5.0...v1.6.0) (2026-03-15)
+
+### Bug Fixes
+
+- **ci:** bypass script mapping by using npm audit command directly in workflow ([b9772e5](https://github.com/felipemiramontesr/prepper/commit/b9772e5a257ba6dac0026340dc455dbf511842db))
+- **types:** resolve Vitest and jest-dom type errors blocking CI build ([4161f29](https://github.com/felipemiramontesr/prepper/commit/4161f29b0977ad42a16ec7ce335f965f1f3cd4b1))
+
+### Features
+
+- **qa:** implement professional test suite and cybersecurity audit gates ([5bcfd66](https://github.com/felipemiramontesr/prepper/commit/5bcfd66c5f4dcd016922dde7af65896e64a2253c))
+
 # [1.5.0](https://github.com/felipemiramontesr/prepper/compare/v1.4.0...v1.5.0) (2026-03-15)
 
 ### Features
