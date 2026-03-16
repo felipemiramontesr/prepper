@@ -1,3 +1,9 @@
+## [1.8.2](https://github.com/felipemiramontesr/prepper/compare/v1.8.1...v1.8.2) (2026-03-16)
+
+### Bug Fixes
+
+- **ci:** upgrade java version to 21 for android build to fix compilation error ([b8e4c08](https://github.com/felipemiramontesr/prepper/commit/b8e4c080728aaee54664eeeb3ccc9adf4614dbfb))
+
 ## [1.8.1](https://github.com/felipemiramontesr/prepper/compare/v1.8.0...v1.8.1) (2026-03-16)
 
 ### Bug Fixes
