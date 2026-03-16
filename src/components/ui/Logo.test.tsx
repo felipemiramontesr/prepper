@@ -17,12 +17,12 @@ describe('Logo Component', () => {
 
   it('displays the three pillars subtitle by default', () => {
     render(<Logo />);
-    expect(screen.getByText(/TÁCTICA • SUPERVIVENCIA • PREPARACIONISMO/i)).toBeInTheDocument();
+    expect(screen.getByText(/INTELIGENCIA • SUPERVIVENCIA • PREPARACIONISMO/i)).toBeInTheDocument();
   });
 
   it('hides the subtitle when showSubtitle is false', () => {
     render(<Logo showSubtitle={false} />);
-    const subtitle = screen.queryByText(/TÁCTICA • SUPERVIVENCIA • PREPARACIONISMO/i);
+    const subtitle = screen.queryByText(/INTELIGENCIA • SUPERVIVENCIA • PREPARACIONISMO/i);
     expect(subtitle).not.toBeInTheDocument();
   });
 });

@@ -33,7 +33,7 @@ export function Logo({ className = '', showSubtitle = true, variant = 'header' }
               : 'mt-1 flex items-center gap-1 text-[0.55rem] tracking-[0.3em] md:text-[0.65rem] md:tracking-[0.4em]'
           }`}
         >
-          TÁCTICA • SUPERVIVENCIA • PREPARACIONISMO
+          INTELIGENCIA • SUPERVIVENCIA • PREPARACIONISMO
         </span>
       )}
     </div>
