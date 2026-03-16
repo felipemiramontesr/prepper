@@ -1,3 +1,9 @@
+# [1.8.0](https://github.com/felipemiramontesr/prepper/compare/v1.7.1...v1.8.0) (2026-03-16)
+
+### Features
+
+- **android:** integrate Capacitor and setup automated APK build pipeline ([1d7edf7](https://github.com/felipemiramontesr/prepper/commit/1d7edf78410f499d5bd28fb03773b346440c4618))
+
 ## [1.7.1](https://github.com/felipemiramontesr/prepper/compare/v1.7.0...v1.7.1) (2026-03-15)
 
 ### Bug Fixes
