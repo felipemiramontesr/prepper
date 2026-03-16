@@ -1,3 +1,9 @@
+## [1.8.1](https://github.com/felipemiramontesr/prepper/compare/v1.8.0...v1.8.1) (2026-03-16)
+
+### Bug Fixes
+
+- **ci:** upgrade node version to 24.x for android build to satisfy capacitor v7+ requirements ([3673161](https://github.com/felipemiramontesr/prepper/commit/3673161ac0e10ecffb603309f0291b1d1a548a7d))
+
 # [1.8.0](https://github.com/felipemiramontesr/prepper/compare/v1.7.1...v1.8.0) (2026-03-16)
 
 ### Features
