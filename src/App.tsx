@@ -81,7 +81,7 @@ function App() {
 
           <HudCard
             title="Comunicaciones"
-            value="ENCRIPTADO"
+            value="CIFRADO"
             Icon={Activity}
             subtitle="Canal VHF y Satelital activo"
           />
